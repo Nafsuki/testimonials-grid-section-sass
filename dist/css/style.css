@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ecf2f8;
+  font-size: 1.3rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 110rem;
+  height: 57rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 2.5rem;
+      grid-template-areas: "card1 card1 card2 card5" "card3 card4 card4 card5";
+}
+
+#main .card1, #main .card2, #main .card3, #main .card4, #main .card5 {
+  border-radius: 0.8rem;
+  padding: 2.5rem 2.8rem;
+  color: #cfcfcf;
+}
+
+#main .card1 .status, #main .card2 .status, #main .card3 .status, #main .card4 .status, #main .card5 .status {
+  opacity: 50%;
+}
+
+#main .card1 .name-plate, #main .card2 .name-plate, #main .card3 .name-plate, #main .card4 .name-plate, #main .card5 .name-plate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main .card1 .name-plate img, #main .card2 .name-plate img, #main .card3 .name-plate img, #main .card4 .name-plate img, #main .card5 .name-plate img {
+  border-style: solid;
+  border-width: 0.2rem;
+  border-radius: 50%;
+  width: 3rem;
+}
+
+#main .card1 .name-plate .info, #main .card2 .name-plate .info, #main .card3 .name-plate .info, #main .card4 .name-plate .info, #main .card5 .name-plate .info {
+  margin-left: 2rem;
+}
+
+#main .card1 .name-plate .info .name, #main .card2 .name-plate .info .name, #main .card3 .name-plate .info .name, #main .card4 .name-plate .info .name, #main .card5 .name-plate .info .name {
+  font-weight: 600;
+}
+
+#main .card1 .title, #main .card2 .title, #main .card3 .title, #main .card4 .title, #main .card5 .title {
+  margin-top: 1.5rem;
+}
+
+#main .card1 .message, #main .card2 .message, #main .card3 .message, #main .card4 .message, #main .card5 .message {
+  margin-top: 1.5rem;
+  line-height: 1.8rem;
+  opacity: 70%;
+}
+
+#main .card1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: card1;
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-color: #7541c8;
+  background-repeat: no-repeat;
+  background-position: 83% 0%;
+}
+
+#main .card1 img {
+  border-color: #816ba7;
+}
+
+#main .card1 .name,
+#main .card1 .title,
+#main .card1 .status,
+#main .card1 .message {
+  color: #ecf2f8;
+}
+
+#main .card2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: card2;
+  background-color: #48556a;
+}
+
+#main .card2 img {
+  border-color: #48556a;
+}
+
+#main .card2 .name,
+#main .card2 .title,
+#main .card2 .status,
+#main .card2 .message {
+  color: #ecf2f8;
+}
+
+#main .card3, #main .card5 {
+  background-color: white;
+  -webkit-box-shadow: 3rem 3rem 10rem -3rem #48556a;
+          box-shadow: 3rem 3rem 10rem -3rem #48556a;
+}
+
+#main .card3 img, #main .card5 img {
+  border-color: white;
+}
+
+#main .card3 .name,
+#main .card3 .title,
+#main .card3 .status,
+#main .card3 .message, #main .card5 .name,
+#main .card5 .title,
+#main .card5 .status,
+#main .card5 .message {
+  color: #48556a;
+}
+
+#main .card3 .title, #main .card4 .title {
+  margin-top: 2.5rem;
+}
+
+#main .card3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card3;
+}
+
+#main .card3 .message {
+  margin-top: 2.5rem;
+}
+
+#main .card4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: card4;
+  background-color: #19212e;
+}
+
+#main .card4 img {
+  border-color: #7541c8;
+}
+
+#main .card4 .name,
+#main .card4 .title,
+#main .card4 .status,
+#main .card4 .message {
+  color: #ecf2f8;
+}
+
+#main .card5 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: card5;
+}
+
+@media (max-width: 1120px) {
+  #main {
+    width: 90vw;
+    height: 80vh;
+    grid-gap: 1rem;
+  }
+  #main .card1, #main .card2, #main .card3, #main .card4, #main .card5 {
+    padding: 2rem;
+  }
+  #main .card1 .title, #main .card2 .title, #main .card3 .title, #main .card4 .title, #main .card5 .title {
+    font-size: 1.4rem;
+  }
+  #main .card1 .message, #main .card2 .message, #main .card3 .message, #main .card4 .message, #main .card5 .message {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #main {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-gap: 2rem;
+        grid-template-areas: "card1 card2" "card3 card4" "card5 card5";
+  }
+  #main .card1, #main .card2, #main .card3, #main .card4, #main .card5 {
+    padding: 3rem;
+  }
+  #main .card1 .title, #main .card2 .title, #main .card3 .title, #main .card4 .title, #main .card5 .title {
+    font-size: 1.7rem;
+  }
+  #main .card1 .message, #main .card2 .message, #main .card3 .message, #main .card4 .message, #main .card5 .message {
+    font-size: 1.3rem;
+  }
+  #main .card5 {
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "card1" "card2" "card3" "card4" "card5";
+  }
+  #main .card1 {
+    margin-top: 5rem;
+  }
+  footer {
+    margin-top: 115rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
